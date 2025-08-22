@@ -27,7 +27,7 @@ Model Architecture
   - Downsampling/upsampling blocks
   - Skip connections
   - Sinusoidal timestep embeddings
-- **Parameter count:** ~10M (depending on configuration).
+- **Parameter count:** ~55M
 
 Training Setup
 - Optimizer: **Adam**, learning rate = `1e-3`.
@@ -40,11 +40,9 @@ Evaluation performed on **10 randomly selected test samples**:
 
 | Metric | Mean Value |
 |--------|------------|
-| **L1 Loss** | ~ |
-| **MSE Loss** | ~ |
-| **PSNR** | ~ dB |
-
-(PSNR > 20 dB typically indicates visually reasonable reconstructions)
+| **L1 Loss** | ~0.5217 |
+| **MSE Loss** | ~0.7100 |
+| **PSNR** | ~ 16.52 dB |
 
 Visual Results
 For each test image:
@@ -52,14 +50,12 @@ For each test image:
 - **xₜ**: noisy image at random timestep  
 - **x̂₀**: reconstruction by the diffusion model  
 
-
-
-## 🧩 Project Structure
+Project Structure
 
 ├── diffusion_model.ipynb
 └── README.md 
 
-## ⚙️ How to Run
+How to Run
 
 1. Install Dependencies
 
@@ -82,7 +78,7 @@ Implemented DDPM from scratch with full mathematical and coding pipeline.
 
 Scaled to ~16,000 images, proving ability to handle real-world, mid-scale datasets.
 
-Achieved PSNR ~ dB, indicating good fidelity in reconstructions.
+Achieved PSNR ~ 16.52 dB, indicating good fidelity in reconstructions.
 
 Developed robust evaluation with L1, MSE, and PSNR to quantify denoising performance.
 

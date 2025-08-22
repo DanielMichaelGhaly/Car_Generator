@@ -1,4 +1,4 @@
-# 🚗 Diffusion Models from Scratch on Stanford Cars
+Diffusion Model from Scratch on Stanford Cars
 
 This project implements a **Denoising Diffusion Probabilistic Model (DDPM)** **from scratch in PyTorch** and applies it to the [Stanford Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html).  
 The pipeline covers **forward diffusion**, **reverse (denoising) process**, **UNet-like neural architecture**, training, evaluation, and **quantitative + visual results**.
